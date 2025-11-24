@@ -26,10 +26,9 @@ function imgTemplate(img) {
 export function createGallery(images) {
   const markup = images.map(imgTemplate).join('');
   gallery.insertAdjacentHTML('beforeend', markup);
-  
   galleryItem.refresh();
-  return markup;
 }
+
 
 export function clearGallery() {
   gallery.innerHTML = '';
